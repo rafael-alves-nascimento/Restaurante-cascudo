@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
-:root{
-    --red:#f70000;
-    --blue:#874b0f;
-    --black:#ffffff;
-    --light-color:rgb(255, 255, 255);
-    --box-shadow:0 .5rem 1rem rgba(195, 64, 64, 0);
-    --border:.1rem solid rgba(255, 255, 255, 0);
+:root {
+  --red: #f70000;
+  --blue: #874b0f;
+  --black: #ffffff;
+  --light-color: rgb(255, 255, 255);
+  --box-shadow: 0 0.5rem 1rem rgba(195, 64, 64, 0);
+  --border: 0.1rem solid rgba(255, 255, 255, 0);
 }
 
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: .2s linear;
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
 }
 
 body {
@@ -24,140 +26,132 @@ body {
   margin: 0px;
   padding: 0px;
   background-image: url(../images/Fundo_Siri-Cascudo2.png);
-
 }
 .homefundo {
   filter: blur(4px);
 }
 
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 7rem;
-    scroll-behavior: smooth;
-    
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
 }
-.resume-box{
-	width: 1000px;
-	height: 900px;
-	margin: 0 auto;
-    background-image: url(../images/Wood.png);
-    border-radius: 15px;
-
+.resume-box {
+  width: 1000px;
+  height: 900px;
+  margin: 0 auto;
+  background-image: url(../images/Wood.png);
+  border-radius: 15px;
 }
-.contact .heading
-{
-    text-align: center;
-    padding:1.5rem;
-    padding-top: 2.5rem;
-    margin-top: 2rem;
-    font-size: 2rem;
-    color:var(--black);
+.contact .heading {
+  text-align: center;
+  padding: 1.5rem;
+  padding-top: 2.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: var(--black);
 }
-.btn{
-    display: inline-block;
-    margin-top: 1rem;
-    padding:.8rem 3rem;
-    background:var(--blue);
-    color:var(--black);
-    cursor: pointer;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    font-weight: 500;
-    text-align: center;
-    
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  background: var(--blue);
+  color: var(--black);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-align: center;
 }
 
-.btn:hover{
-    background:var(--red);
+.btn:hover {
+  background: var(--red);
 }
-.contact .row{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-    
-}
-
-.contact .row .map{
-    flex:1 1 42rem;
-    width: 100%;
-    padding:2rem;
-    box-shadow: var(--box-shadow);
-  
-    border-radius: .5rem;
-    
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-.contact .row form{
-    padding:2rem;
-    flex:1 1 42rem;
-    box-shadow: var(--box-shadow);
-    
-    text-align: center;
-    border-radius: .5rem;
+.contact .row .map {
+  flex: 1 1 42rem;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+
+  border-radius: 0.5rem;
 }
 
-.contact .row form h3{
-    font-size: 3rem;
-    color:var(--black);
-    padding-bottom: 1rem;
+.contact .row form {
+  padding: 2rem;
+  flex: 1 1 42rem;
+  box-shadow: var(--box-shadow);
+
+  text-align: center;
+  border-radius: 0.5rem;
 }
 
-.contact .row form .box{
-    width:100%;
-    border-radius: .5rem;
-    padding:1rem 1.2rem;
-    font-size: 1.6rem;
-    text-transform: none;
-    
-    margin:.7rem 0;
+.contact .row form h3 {
+  font-size: 3rem;
+  color: var(--black);
+  padding-bottom: 1rem;
 }
 
-.contact .row form textarea{
-    height:5rem;
-    resize: none;
+.contact .row form .box {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  text-transform: none;
+
+  margin: 0.7rem 0;
 }
 
-footer{
-  
-    padding-bottom: 30rem;
+.contact .row form textarea {
+  height: 5rem;
+  resize: none;
 }
 
-footer .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap:1.5rem;
+footer {
+  padding-bottom: 30rem;
 }
 
-footer .box-container .box h3{
-    font-size: 2.2rem;
-    text-align: center;
-    padding:1rem 0;
-    color:var(--black);
+footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
 }
 
-footer .box-container .box a{
-    display: block;
-    font-size: 2.4rem;
-    padding:1rem 0;
-    color:var(--light-color);
+footer .box-container .box h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--black);
 }
 
-footer .box-container .box a i{
-    padding-right: .5rem;
-    color:var(--black);
+footer .box-container .box a {
+  display: block;
+  font-size: 2.4rem;
+  padding: 1rem 0;
+  color: var(--light-color);
 }
 
-footer .box-container .box a:hover i{
-    padding-right: 2rem;
+footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--black);
 }
 
-footer .credit{
-    text-align: center;
-    padding:1.5rem;
-    padding-top: 2.5rem;
-    margin-top: 2rem;
-    border-top: var(--border);
-    font-size: 2rem;
-    color:var(--black);
+footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+footer .credit {
+  text-align: center;
+  padding: 1.5rem;
+  padding-top: 2.5rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+  font-size: 2rem;
+  color: var(--black);
 }

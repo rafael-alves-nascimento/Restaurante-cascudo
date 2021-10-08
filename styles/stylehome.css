@@ -2,7 +2,6 @@ body {
   border: 0px;
   margin: 0px;
   padding: 0px;
-}
-.homefundo {
-  filter: blur(2.5px);
+  background-image: url(../images/Fundo_Siri-Cascudo2.png);
+  background-size: 100%;
 }
