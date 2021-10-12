@@ -6,19 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/stylereceitas.css">
 </head>
 
 <body>
-    <header>
-    
-    </header>
-    <main>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">Restaurante</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="home.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="cardapio.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Cardápio</span>
+                </a>
+                <span class="tooltip">Cardápio</span>
+            </li>
+            <li>
+                <a href="receitas.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Receitas</span>
+                </a>
+                <span class="tooltip">Receitas</span>
+            </li>
+            <li>
+                <a href="unidades.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Unidades</span>
+                </a>
+                <span class="tooltip">Unidades</span>
+            </li>
+            <li>
+                <a href="contato.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Contato</span>
+                </a>
+                <span class="tooltip">Contato</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="images/User_icon_BLACK-01.png" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Usuário</div>
+                        <div class="job">Cliente</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="text">Bem-vindo!</div>
+    </section>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
 
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
 
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
 
-
-    </main>
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+            }
+        }
+    </script>
 </body>
 
 </html>
