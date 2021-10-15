@@ -1,0 +1,87 @@
+body {
+	background-image: url("https://i.imgur.com/yWcTRqA.jpg");
+	background-position:fixed;
+	line-height:25px;
+
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+	
+}
+
+.content {
+	background:#fbf468;
+	border-radius:25px;
+	width:300px;
+	height:400px;
+	padding: 10px;
+}
+
+
+input {
+	font-family: tahoma;
+	font-size:12px;
+    color: #070707;
+	height:30px;
+	padding:0 10px;
+	width:200px;
+	margin:5px 10px;
+	border: #b4b349 dashed 5px;
+	background-color:transparent;
+	float:center;
+	outline:0;	
+}
+input:focus {
+	border: #8c8b49 dashed 5px;
+}
+.belt {
+	width:220px;
+	margin-bottom: -5px;
+    margin-left: 4px;
+}
+input#sub{	
+	font-family: monospace;
+	color:#4a67e6;
+		font-size:15px;
+
+}
+input#sub:hover{	
+	background-color:#b4b349;
+	color:white;
+}
+.righteye{
+	width: 25px;
+    left: 174px;
+    position: absolute;
+    top: 75px;
+}
+.lefteye{
+	width: 25px;
+    left: 110px;
+    position: absolute;
+    top: 75px;
+}
+.bob{
+	width:150px;
+	height:auto;
+	padding-top: 20px;
+    padding-left: 70px;	
+}
+
+.center {
+	top: 50vh;
+	margin-top: -200px;
+	position: absolute;
+}
+.cir11 {
+	position: absolute;
+	padding:5px;
+	border:1px;
+	border-color:black;
+	border-style: solid;
+    border-radius: 90%;
+}
+.f1 {
+	text-align:center;
+}
