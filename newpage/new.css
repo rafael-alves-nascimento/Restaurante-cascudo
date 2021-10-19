@@ -18,7 +18,7 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     line-height: 1.4;
-    background-image: url(../Restaurante-cascudo-main/images//Fundo_Siri-Cascudo2.png)
+    background-image: url(../images/Fundo_Siri-Cascudo2.png)
   }
   
   img {
@@ -55,8 +55,7 @@
     object-fit: cover;
     width: 100px;
     max-height: 100%;
-    
-    padding-left: 30px;
+    padding-left: 70px;
     padding-top: 0px;  
   }
   
