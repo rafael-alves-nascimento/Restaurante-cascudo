@@ -1,0 +1,44 @@
+body {
+ background-color: #fafafa00;
+  background-image: linear-gradient(rgba(43, 45, 66, 0), rgba(43, 45, 66, 0)), url("../images/Remastered-Siri.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  height: 100vh;
+  padding-top: 395px;
+  display: flex;
+}
+
+.animated {
+  animation-duration: 500ms;
+}
+
+.top-nav {
+  z-index: 100;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+.top-nav.sticky {
+  position: fixed;
+}
+.top-nav ul {
+  float: right;
+}
+.top-nav ul .signup-btn {
+  padding: 0.25em 0.5em;
+}
+.top-nav ul .signup-btn,
+.top-nav ul .signup-btn:hover {
+  color: #EDF2F4 !important;
+  border-bottom: 1px solid #0460d9 !important;
+  border-color: #0412d9 !important;
+}
+
+#speakers_modal .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
