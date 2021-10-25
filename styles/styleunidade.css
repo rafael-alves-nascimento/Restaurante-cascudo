@@ -8,6 +8,24 @@
     --border: 0.1rem solid rgba(255, 255, 255, 0);
 }
 
+.grade{
+   justify-content: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr auto;
+   border-style: groove;
+}
+   
+.zile{   
+   
+justify-content: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr auto;
+   color: aliceblue;
+   font-family: "Poppins", sans-serif;
+   font-size: large;
+   
+}
+
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -40,7 +58,7 @@ html {
 
 .resume-box {
     width: 1500px;
-    height: 900px;
+    height: 880px;
     margin: 0 auto;
     background-image: url(../images/Wood.png);
     border-radius: 15px;
