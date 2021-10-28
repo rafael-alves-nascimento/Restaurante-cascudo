@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidades</title>
+    <title>Unidades | WSBurger Cascudo</title>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/styleunidade.css">
 </head>
@@ -26,97 +26,106 @@
                                 <h3>Unidades</h3>
                             </form>
                         </div>
-    <div class="sidebar">
-        <div class="logo-details">
-            <div class="logo_name">Restaurante</div>
-            <i class='bx bx-menu' id="btn"></i>
-        </div>
-        <ul class="nav-list">
-            <li>
-                <a href="home.html">
-                    <i class='bx bx-cart-alt'></i>
-                    <span class="links_name">Home</span>
-                </a>
-                <span class="tooltip">Home</span>
-            </li>
-            <li>
-                <a href="cardapio.html">
-                    <i class='bx bx-cart-alt'></i>
-                    <span class="links_name">Cardápio</span>
-                </a>
-                <span class="tooltip">Cardápio</span>
-            </li>
-            <li>
-                <a href="receitas.html">
-                    <i class='bx bx-cart-alt'></i>
-                    <span class="links_name">Receitas</span>
-                </a>
-                <span class="tooltip">Receitas</span>
-            </li>
-            <li>
-                <a href="unidades.html">
-                    <i class='bx bx-cart-alt'></i>
-                    <span class="links_name">Unidades</span>
-                </a>
-                <span class="tooltip">Unidades</span>
-            </li>
-            <li>
-                <a href="contato.html">
-                    <i class='bx bx-cart-alt'></i>
-                    <span class="links_name">Contato</span>
-                </a>
-                <span class="tooltip">Contato</span>
-            </li>
-            <li class="profile">
-                <div class="profile-details">
-                    <img src="images/User_icon_BLACK-01.png" alt="profileImg">
-                    <div class="name_job">
-                        <div class="name">Usuário</div>
-                        <div class="job">Cliente</div>
-                    </div>
-                </div>
-                <i class='bx bx-log-out' id="log_out"></i>
-            </li>
-        </ul>
-    </div>
-    <section class="home-section">
-    </section>
-    <script>
-        let sidebar = document.querySelector(".sidebar");
-        let closeBtn = document.querySelector("#btn");
-        let searchBtn = document.querySelector(".bx-search");
+                        <div class="sidebar">
+                            <div class="logo-details">
+                                <div class="logo_name">WSBurger Cascudo</div>
+                                <i class='bx bx-menu' id="btn"></i>
+                            </div>
+                            <ul class="nav-list">
+                                <li>
+                                    <a href="home.html">
+                                        <i class='bx bx-cart-alt'></i>
+                                        <span class="links_name">Home</span>
+                                    </a>
+                                    <span class="tooltip">Home</span>
+                                </li>
+                                <li>
+                                    <a href="cardapio.html">
+                                        <i class='bx bx-cart-alt'></i>
+                                        <span class="links_name">Cardápio</span>
+                                    </a>
+                                    <span class="tooltip">Cardápio</span>
+                                </li>
+                                <li>
+                                    <a href="receitas.html">
+                                        <i class='bx bx-cart-alt'></i>
+                                        <span class="links_name">Receitas</span>
+                                    </a>
+                                    <span class="tooltip">Receitas</span>
+                                </li>
+                                <li>
+                                    <a href="unidades.html">
+                                        <i class='bx bx-cart-alt'></i>
+                                        <span class="links_name">Unidades</span>
+                                    </a>
+                                    <span class="tooltip">Unidades</span>
+                                </li>
+                                <li>
+                                    <a href="contato.html">
+                                        <i class='bx bx-cart-alt'></i>
+                                        <span class="links_name">Contato</span>
+                                    </a>
+                                    <span class="tooltip">Contato</span>
+                                </li>
+                                <li class="profile">
+                                    <div class="profile-details">
+                                        <img src="images/User_icon_BLACK-01.png" alt="profileImg">
+                                        <div class="name_job">
+                                            <div class="name">Usuário</div>
+                                            <div class="job">Cliente</div>
+                                        </div>
+                                    </div>
+                                    <i class='bx bx-log-out' id="log_out"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <section class="home-section">
+                        </section>
+                        <script>
+                            let sidebar = document.querySelector(".sidebar");
+                            let closeBtn = document.querySelector("#btn");
+                            let searchBtn = document.querySelector(".bx-search");
 
-        closeBtn.addEventListener("click", () => {
-            sidebar.classList.toggle("open");
-            menuBtnChange(); //calling the function(optional)
-        });
+                            closeBtn.addEventListener("click", () => {
+                                sidebar.classList.toggle("open");
+                                menuBtnChange(); //calling the function(optional)
+                            });
 
-        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
-            sidebar.classList.toggle("open");
-            menuBtnChange(); //calling the function(optional)
-        });
+                            searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+                                sidebar.classList.toggle("open");
+                                menuBtnChange(); //calling the function(optional)
+                            });
 
-        // following are the code to change sidebar button(optional)
-        function menuBtnChange() {
-            if (sidebar.classList.contains("open")) {
-                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
-            } else {
-                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
-            }
-        }
-    </script>
-   <div class="grade">
-    <div class="caixa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.6667823900332!2d-46.651519974876095!3d-23.56569149956991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b88fc0fbdf%3A0xad13650513171508!2sAv.%20Paulista%2C%20810%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1634924086770!5m2!1spt-BR!2sbr" width="480" height="580" style="border:100;" allowfullscreen="" loading="lazy"></iframe></div>
-    <div class="caixa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.9867655313506!2d-46.68045448438396!3d-23.676431271738334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce501ac3b77f8f%3A0xdaa230261180506a!2sShopping%20Interlagos!5e0!3m2!1spt-BR!2sbr!4v1634924555558!5m2!1spt-BR!2sbr" width="480" height="580" style="border:100;" allowfullscreen="" loading="lazy"></iframe></div>
-    <div class="caixa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.362903515823!2d-46.650170484383736!3d-23.698731172566195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce450c51e4f80d%3A0xdbc8a8f60ae08a10!2sPublic%20Superatacados!5e0!3m2!1spt-BR!2sbr!4v1634924841413!5m2!1spt-BR!2sbr" width="480" height="580" style="border:100;" allowfullscreen="" loading="lazy"></iframe></div>  
-    </div>
-    
-    <div class="zile">
-    <div class="caixa"><p>venha conhecer nossa unidade na av.paulista</p></div>
-    <div class="caixa"><p>venha conferir nossa unidade na av.interlagos</p></div>
-    <div class="caixa"><p>venha conhecer nossa unidade na estrada do alvarenga</p></div>
-    
-</div>
+                            // following are the code to change sidebar button(optional)
+                            function menuBtnChange() {
+                                if (sidebar.classList.contains("open")) {
+                                    closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+                                } else {
+                                    closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+                                }
+                            }
+                        </script>
+                        <div class="grade">
+                            <div class="caixa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.6667823900332!2d-46.651519974876095!3d-23.56569149956991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b88fc0fbdf%3A0xad13650513171508!2sAv.%20Paulista%2C%20810%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1634924086770!5m2!1spt-BR!2sbr"
+                                    width="480" height="580" style="border:100;" allowfullscreen="" loading="lazy"></iframe></div>
+                            <div class="caixa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.9867655313506!2d-46.68045448438396!3d-23.676431271738334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce501ac3b77f8f%3A0xdaa230261180506a!2sShopping%20Interlagos!5e0!3m2!1spt-BR!2sbr!4v1634924555558!5m2!1spt-BR!2sbr"
+                                    width="480" height="580" style="border:100;" allowfullscreen="" loading="lazy"></iframe></div>
+                            <div class="caixa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.362903515823!2d-46.650170484383736!3d-23.698731172566195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce450c51e4f80d%3A0xdbc8a8f60ae08a10!2sPublic%20Superatacados!5e0!3m2!1spt-BR!2sbr!4v1634924841413!5m2!1spt-BR!2sbr"
+                                    width="480" height="580" style="border:100;" allowfullscreen="" loading="lazy"></iframe></div>
+                        </div>
+
+                        <div class="zile">
+                            <div class="caixa">
+                                <p>venha conhecer nossa unidade na av.paulista</p>
+                            </div>
+                            <div class="caixa">
+                                <p>venha conferir nossa unidade na av.interlagos</p>
+                            </div>
+                            <div class="caixa">
+                                <p>venha conhecer nossa unidade na estrada do alvarenga</p>
+                            </div>
+
+                        </div>
 </body>
 
 

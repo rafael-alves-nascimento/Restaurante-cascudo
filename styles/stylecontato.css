@@ -34,7 +34,6 @@ body {
 html {
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-padding-top: 2rem;
     scroll-behavior: smooth;
 }
 
@@ -201,8 +200,7 @@ footer .credit {
     transition: all 0.5s ease;
 }
 
-.sidebar.open .logo-details .icon,
-.sidebar.open .logo-details .logo_name {
+.sidebar.open .logo-details .icon, .sidebar.open .logo-details .logo_name {
     opacity: 1;
 }
 
@@ -341,8 +339,7 @@ footer .credit {
     pointer-events: auto;
 }
 
-.sidebar li a:hover .links_name,
-.sidebar li a:hover i {
+.sidebar li a:hover .links_name, .sidebar li a:hover i {
     transition: all 0.5s ease;
     color: rgb(65, 48, 34);
 }
@@ -384,8 +381,7 @@ footer .credit {
     margin-right: 10px;
 }
 
-.sidebar li.profile .name,
-.sidebar li.profile .job {
+.sidebar li.profile .name, .sidebar li.profile .job {
     font-size: 15px;
     font-weight: 400;
     color: #fff;

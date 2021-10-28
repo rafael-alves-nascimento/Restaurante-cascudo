@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -46,17 +45,20 @@ canvas {
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
 }
+
 .top-nav.sticky {
   position: fixed;
 }
+
 .top-nav ul {
   float: right;
 }
+
 .top-nav ul .signup-btn {
   padding: 0.25em 0.5em;
 }
-.top-nav ul .signup-btn,
-.top-nav ul .signup-btn:hover {
+
+.top-nav ul .signup-btn, .top-nav ul .signup-btn:hover {
   color: #EDF2F4 !important;
   border-bottom: 1px solid #0460d9 !important;
   border-color: #0412d9 !important;

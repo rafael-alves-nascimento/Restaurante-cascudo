@@ -5,13 +5,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   border: 0px;
   margin: 0px;
   padding: 0px;
   background-image: url(../images/Fundo_Siri-Cascudo2.png);
 }
-
 
 .resume-box {
   width: 1300px;
@@ -58,8 +58,7 @@ body {
   transition: all 0.5s ease;
 }
 
-.sidebar.open .logo-details .icon,
-.sidebar.open .logo-details .logo_name {
+.sidebar.open .logo-details .icon, .sidebar.open .logo-details .logo_name {
   opacity: 1;
 }
 
@@ -198,8 +197,7 @@ body {
   pointer-events: auto;
 }
 
-.sidebar li a:hover .links_name,
-.sidebar li a:hover i {
+.sidebar li a:hover .links_name, .sidebar li a:hover i {
   transition: all 0.5s ease;
   color: rgb(65, 48, 34);
 }
@@ -241,8 +239,7 @@ body {
   margin-right: 10px;
 }
 
-.sidebar li.profile .name,
-.sidebar li.profile .job {
+.sidebar li.profile .name, .sidebar li.profile .job {
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -282,7 +279,7 @@ body {
   z-index: 2;
 }
 
-.sidebar.open ~ .home-section {
+.sidebar.open~.home-section {
   left: 250px;
   width: calc(100% - 250px);
 }
@@ -295,14 +292,12 @@ body {
   margin: 18px;
 }
 
-.image{
-    display: flex;
-    justify-content: flex-end;   
-
+.image {
+  display: flex;
+  justify-content: flex-end;
 }
-*,
-*:before,
-*:after {
+
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -384,8 +379,6 @@ body {
   font-weight: 700;
   line-height: 110px;
   padding-left: 20px
- 
-
 }
 
 .text-description {
@@ -394,7 +387,6 @@ body {
   line-height: 22px;
   margin-top: 25px;
   padding-left: 20px
-
 }
 
 .text__background {
@@ -406,7 +398,6 @@ body {
   font-size: 170px;
   font-weight: 700;
   padding-left: 20px
-
 }
 
 .flex__item {
@@ -439,39 +430,40 @@ body {
   opacity: 0;
 }
 
-.flex--preStart .flex__item--left,
-.flex--preStart .flex__item--right,
-.flex--active .flex__item--left,
-.flex--active .flex__item--right {
+.flex--preStart .flex__item--left, .flex--preStart .flex__item--right, .flex--active .flex__item--left, .flex--active .flex__item--right {
   opacity: 1;
 }
 
 .flex-blue .flex__item--left {
-    background-image:url(./images/Fundo_Siri-Cascudo2.png)}
+  background-image: url(./images/Fundo_Siri-Cascudo2.png)
+}
 
 .flex-blue .flex__item--right {
-  background-image:url(../images/Wood.png)
+  background-image: url(../images/Wood.png)
 }
 
 .flex-red .flex__item--left {
-    background-image:url(./images/Fundo_Siri-Cascudo2.png)}
+  background-image: url(./images/Fundo_Siri-Cascudo2.png)
+}
 
 .flex-red .flex__item--right {
-  background-image:url(../images/Wood.png)
+  background-image: url(../images/Wood.png)
 }
 
 .flex-purple .flex__item--left {
-    background-image:url(./images/Fundo_Siri-Cascudo2.png)}
+  background-image: url(./images/Fundo_Siri-Cascudo2.png)
+}
 
 .flex-purple .flex__item--right {
-  background-image:url(../images/Wood.png)
+  background-image: url(../images/Wood.png)
 }
 
 .flex-charcoal .flex__item--left {
-    background-image:url(./images/Fundo_Siri-Cascudo2.png)}
+  background-image: url(./images/Fundo_Siri-Cascudo2.png)
+}
 
 .flex-charcoal .flex__item--right {
-    background-image:url(../images/Wood.png)
+  background-image: url(../images/Wood.png)
 }
 
 .flex__content {
@@ -489,8 +481,7 @@ body {
   max-height: 40vw;
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  transition: opacity 0.43s 0.6s,
-    transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+  transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
 }
 
 /* START ANIMATION */
@@ -525,8 +516,6 @@ body {
   opacity: 0;
 }
 
-
-
 @media (max-width: 420px) {
   .sidebar li .tooltip {
     display: none;
@@ -534,11 +523,11 @@ body {
 }
 
 .flex-container-image {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .flex-container-texto {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
