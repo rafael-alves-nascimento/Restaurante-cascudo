@@ -168,7 +168,7 @@
 }
 
 .sidebar li a .links_name {
-    color: #fff;
+    color: black;
     font-size: 15px;
     font-weight: 400;
     white-space: nowrap;
@@ -227,7 +227,7 @@
 .sidebar li.profile .name, .sidebar li.profile .job {
     font-size: 15px;
     font-weight: 400;
-    color: #fff;
+    color: black;
     white-space: nowrap;
 }
 
