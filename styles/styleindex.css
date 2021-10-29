@@ -1,71 +1,80 @@
-html, body {
-  height: 100%;
+html,
+body {
+    height: 100%;
 }
 
 body {
-  background-image: url(../images/Remastered-Siri.jpg);
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
+    background-image: url(../images/Remastered-Siri.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
 }
 
 canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 10;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 .instructions {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  border: 3px solid #fff;
-  border-radius: 6px;
-  padding: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    padding: 8px;
 }
 
 .animated {
-  animation-duration: 500ms;
+    animation-duration: 500ms;
 }
 
 .top-nav {
-  z-index: 100;
-  position: absolute;
-  top: 20px;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0);
+    z-index: 100;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .top-nav.sticky {
-  position: fixed;
+    position: fixed;
 }
 
 .top-nav ul {
-  float: right;
+    float: right;
 }
 
 .top-nav ul .signup-btn {
-  padding: 0.25em 0.5em;
+    padding: 0.25em 0.5em;
 }
 
-.top-nav ul .signup-btn, .top-nav ul .signup-btn:hover {
-  color: #EDF2F4 !important;
-  border-bottom: 1px solid #0460d9 !important;
-  border-color: #0412d9 !important;
+.top-nav ul .signup-btn,
+.top-nav ul .signup-btn:hover {
+    color: #EDF2F4 !important;
+    border-bottom: 1px solid #0460d9 !important;
+    border-color: #0412d9 !important;
 }
 
 #speakers_modal .list-group-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    background-color: transparent;
+    color: transparent;
+    bottom: 90%;
+    right: 98%;
 }
