@@ -3,37 +3,105 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Bem-vindo! | WSBurger Cascudo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
-    <link rel="stylesheet" href="./styles/styleindex.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | WSBurger Cascudo</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/stylehome.css">
 </head>
 
 <body>
-    <a href="../Restaurante-cascudo-main/home.html" class="img"><img src="../Restaurante-cascudo-main/images/whatsapp.png" alt="Botão" width="495px" height="50px"> </a>
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
-    <nav class="top-nav ">
-        <div class="container">
-            <ul class="list-unstyled list-inline">
-
-            </ul>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">WSBurger Cascudo</div>
+            <i class='bx bx-menu' id="btn"></i>
         </div>
-    </nav>
+        <ul class="nav-list">
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="cardapio.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Cardápio</span>
+                </a>
+                <span class="tooltip">Cardápio</span>
+            </li>
+            <li>
+                <a href="receitas.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Receitas</span>
+                </a>
+                <span class="tooltip">Receitas</span>
+            </li>
+            <li>
+                <a href="unidades.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Unidades</span>
+                </a>
+                <span class="tooltip">Unidades</span>
+            </li>
+            <li>
+                <a href="contato.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Contato</span>
+                </a>
+                <span class="tooltip">Contato</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="images/User_icon_BLACK-01.png" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Usuário</div>
+                        <div class="job">Cliente</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+    <section class="showcase">
+        <header>
+            <h2 class="logo"><img src="../Restaurante-cascudo-main/images/images/66c0f3951cf18634e632c383284ab1f7.png"
+                    alt="" width="800px" height="950px"></h2>
+            <div class="toggle"></div>
+        </header>
+        <div class="overlay"></div>
+        <div class="text">
+            <h3>Quem Somos...</h3>
+            <h2>WSBurger Cascudo</h2>
+            <p>
+                Somos um restaurante com alma de comida feita no mar por amor aos nossos Clientes.
+            </p>
+    </section>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
 
-    </header>
-    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js'></script>
-    <script src="./js/js.js"></script>
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
 
-    <canvas></canvas>
-    <script src="../Restaurante-cascudo-main/js/home.js"></script>
-
-
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+            }
+        }
+    </script>
 </body>
 
 </html>
